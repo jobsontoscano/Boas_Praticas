@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste 01</title>
+</head>
+<body>
+	<button class="jobson" value="Jobs">JObson</button>
+
+</body>
+</html>
+<script type="text/javascript">
+function $(valor){
+	var valor_final = valor;
+	var char = valor.substring(0,1);
+	// alert(char + valor);
+	if (char == '.') {
+		return document.getElementByClassName(valor_final).value;
+	}else if(char == '#'){
+		return document.getElementById(valor_final).value;
+	}else{
+		document.getElementsByTagName(valor_final).value;
+	}
+}
+	var valor = $('.jobson');
+	print(valor);
+
+</script>

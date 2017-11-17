@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index -- Home Teste</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="myNav" class="login">
+ <button class="closebtn">&times;</button>
+  <div class="login-content">
+    <a href="#">Cadastro</a>
+    <input type="text" name="name" placeholder="Nome">
+    <input type="text" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Senha">
+  </div>
+</div>
+
+<h2>Fullscreen Overlay Nav Example</h2>
+<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
+<p>In this example, the navigation menu will slide in, from left to right:</p>
+<span style="font-size:30px;cursor:pointer" class="open">&#9776; open</span>
+
+<script>
+	$(document).ready(function(){
+		$('.open').on('click', function(){
+			$('#myNav').css('width','100%');
+		});
+		$('.closebtn').on('click', function(){
+			$('#myNav').css('width', '0');
+		});
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Praticas Front-end</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script src="../jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div class="navbar">
+	<div class="dropdown">
+		<button class="dropbtn">
+			Home
+		</button>
+		<div class="dropdown-content">
+			<div class="row">
+				<div class="column">
+					<h3>Mercados</h3>
+					<a href="#">Casa 01</a>							
+					<a href="#">Casa 02</a>							
+					<a href="#">Casa 03</a>							
+				</div>	
+				<div class="column">
+					<h3>Lanchonete</h3>
+					<a href="#">Casa 01</a>							
+					<a href="#">Casa 02</a>							
+					<a href="#">Casa 03</a>							
+				</div>	
+				<div class="column">
+					<h3>Lojas Roupas</h3>
+					<a href="#">Casa 01</a>							
+					<a href="#">Casa 02</a>							
+					<a href="#">Casa 03</a>							
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="drop-ex">
+	  	<button href="#news" class="dropbtn">News</button>
+		<div class="drop-ex-content">
+			<div class="blue">oi</div>
+			<div class="green">oi</div>
+			<div class="red">oi</div>
+	 	</div>
+  	</div>
+  
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h2>Mega Menu</h2>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+        <div class="column">
+          <h3>Category 3</h3>
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+	<div class="drop-js">
+		<button>VENHA VER MAIS</button>
+		<div class="dropdown-js">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</div>
+	</div>
+
+<div style="padding:16px">
+  <h3>Responsive Mega Menu (Full-width dropdown in navbar)</h3>
+  <p>Hover over the "Dropdown" link to see the mega menu.</p>
+  <p>Resize the browser window to see the responsive effect.</p>
+</div>
+</body>
+</html>
+<script type="text/javascript">
+	$('.drop-js').mousoever(function(){
+		$('.dropdown-js').css('display','block');
+	});
+	$('.drop-js').mouseout(function(){
+		$('.dropdown-js').css('display', 'none');
+	});
+</script>
